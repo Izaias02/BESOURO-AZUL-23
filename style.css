@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: url(img/background-desktop\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-left: 96px;
+    padding-right: 96px;
+    padding-bottom: 16px;
+    padding: 32px 96px 16px 96px;
+
+
+}
+
+header{
+    background-color: tomato;
+    height: 50px;
+
+}
+    main{
+        background-color: aqua;
+        flex-grow: 1;
+
+    }
+
+footer{
+    background-color: blue;
+    height: 50px;
+
+
+}
