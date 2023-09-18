@@ -32,15 +32,103 @@ header a{
     font-size: 1.5rem;
 
 }
+header a:hover{
+    border-bottom: 4px solid #22fffe;
+
+}
+header .logo-dc:hover{
+    border-bottom: 4px solid transparent;
+}
 main{
-    background-color: aqua;
     flex-grow: 1;
-
+    display: flex;
     }
+.filme-container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 
+}
+.descrição{
+    
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+
+}
+.descrição p{
+    width: 530px;
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+
+.trailers{
+    height: 130px;
+    display: flex;
+    gap: 32px;
+}
+.social-container{
+    
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    font-size: 32px;
+    color: #fff;
+}
+
+.social-container i:hover{
+
+color: #22fffE;
+
+}
 footer{
-    background-color: blue;
     height: 50px;
+    color: #fff;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 
+/* TABLET */
+
+@media (max-width: 768px){
+    Body{
+        padding: 32px 0px 0px 0px;
+        background-image: url(./img/background-tablet.png);
+    }
+    .social-container{
+        display: none;
+    }
+    .filme-container{
+        align-items: center;
+    }
+    .descrição{
+        justify-content: flex-start;
+        padding: 60px;
+        flex-grow: 0;
+    }
+    .descrição p{
+        text-align: center;
+    }
+    .trailers{
+        flex-direction: column;
+    }
+    .trailers img{
+        width: 500px;
+}
+    .trailers a:nth-child(3){
+        display: none;
+    }
+    footer{
+        display: none;
+    }
 }
